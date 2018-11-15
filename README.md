@@ -20,7 +20,7 @@ usage: java -jar randomFasta.jar -n <#Seqs> -l <LenSeqs>
 built from [FastaUtils](https://github.com/jlboat/FastaUtils)
 
 ```bash
-usage: java -jar randomFasta.jar -n <#Seqs> -l <LenSeqs>
+usage: java -jar fastaStats-1.0.jar -i <input> -o <output>
  -h,--help           Print this help message
  -i,--input <arg>    Input FASTA file
  -o,--output <arg>   Output file name (default: stdout)
