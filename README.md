@@ -7,7 +7,7 @@ This repository contains scripts for dealing with FASTA files and identifies ext
 
 built from [FastaUtils](https://github.com/jlboat/FastaUtils)
 
-```bash
+```
 usage: java -jar randomFasta.jar -n <#Seqs> -l <LenSeqs>
  -h,--help           Print this help message
  -l,--length <arg>   Length of sequences (default: 200)
@@ -19,16 +19,31 @@ usage: java -jar randomFasta.jar -n <#Seqs> -l <LenSeqs>
 
 built from [FastaUtils](https://github.com/jlboat/FastaUtils)
 
-```bash
+```
 usage: java -jar fastaStats-1.0.jar -i <input> -o <output>
  -h,--help           Print this help message
  -i,--input <arg>    Input FASTA file
  -o,--output <arg>   Output file name (default: stdout)
 ```
 
+## generateFASTAhistogram
+
+```
+usage: generateFASTAhistogram.py [-h] --file FILE --hist HIST [--bins BINS]
+
+This script was designed to generate histograms for FASTA sequence lengths.
+
+optional arguments:
+  -h, --help   show this help message and exit
+  --file FILE  Input file. Output from fastaStats.jar
+  --hist HIST  Choose which type of histogram to generate. --hist d (density)
+               --hist f (frequency).
+  --bins BINS  Optionally choose bin count for the frequency histogram
+```
+
 ## renameFASTAdeflines.py
 
-```bash
+```
 usage: renameFASTAdeflines.py [-h] -f FASTA [-d DEFLINE] [-m HASHMAP]
 
 This script is designed to rename the deflines in a FASTA file and     
@@ -57,7 +72,7 @@ required arguments:
 
 See Picard:
 
-```bash
+```
 java -jar picard.jar ExtractSequences \
       INTERVAL_LIST=regions_of_interest.interval_list \
       R=reference.fasta \
